@@ -587,7 +587,6 @@ function run() {
             core.info(`API response status: ${dispatchResp.status} 🚀`);
         }
         catch (error) {
-            console.debug(JSON.stringify(error, null, 3));
             core.setFailed(error.message);
         }
     });
